@@ -45,11 +45,7 @@
 .main {
   display: flex;
   width: 100%;
-<<<<<<< HEAD
   height: 60vh;
-=======
-  height: 80vh;
->>>>>>> 826a309cf496453b163792feed3c27024b599e1c
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(/img/phonehome.png);
@@ -66,11 +62,7 @@
   font-size: 8vw;
   padding-top: 20px;
   padding-bottom: 20px;
-<<<<<<< HEAD
   box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
-=======
-  box-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
->>>>>>> 826a309cf496453b163792feed3c27024b599e1c
 }
 
 .banner1 {
@@ -130,7 +122,6 @@
   font-size: 5vw;
   box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
   border-radius: 20px;
-<<<<<<< HEAD
 }
 
 .img2 {
@@ -160,8 +151,6 @@
 .sudokuheader {
   text-align: center;
   font-weight: 400;
-=======
->>>>>>> 826a309cf496453b163792feed3c27024b599e1c
 }
 
 .header .menu-icon {
@@ -284,11 +273,7 @@
   height: auto;
   font-size: 6vw;
   background-color: rgb(35, 35, 35);
-<<<<<<< HEAD
   box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
-=======
-  box-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
->>>>>>> 826a309cf496453b163792feed3c27024b599e1c
   }
 
   .banner1 {
@@ -318,7 +303,6 @@
     margin: 3vw;
     padding: 1.7vw;
     margin-left: 0;
-<<<<<<< HEAD
     box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
     border-radius: 30px;
   }
@@ -353,9 +337,5 @@
     margin-left: 0;
     box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
     border-radius: 30px;
-=======
-    box-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
-    border-radius: 40px;
->>>>>>> 826a309cf496453b163792feed3c27024b599e1c
   }
 }
