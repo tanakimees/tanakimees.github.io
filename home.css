@@ -153,6 +153,13 @@
   font-weight: 400;
 }
 
+.sudokulink {
+  text-decoration: none;
+  color: white;
+  text-decoration: underline;
+  padding-left: 3vw;
+}
+
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
