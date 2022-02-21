@@ -206,6 +206,7 @@
   font-size: 5vw;
   box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
   border-radius: 20px;
+  text-align: center;
 }
 
 .gallerylol {
@@ -219,12 +220,13 @@
   flex-direction: row;
   display: flex;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .gallery1 {
   height: 90%;
   width: auto;
-  margin: 18px;
+  margin: 19px;
   background-image: url(/img/gallery1.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -457,6 +459,7 @@
     font-size: 2.65vw;
     box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
     border-radius: 30px;
+    text-align: center;
   }
 
   .gallerylol {
