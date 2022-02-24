@@ -109,6 +109,9 @@
   padding-bottom: 1vw;
   padding-top: 0vw;
   box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
+  background-image: url(/img/galaxy.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .aboutme {
@@ -119,6 +122,9 @@
   box-sizing: border-box;
   padding-bottom: 1vw;
   box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
+  background-image: url(/img/artwork.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -126,13 +132,14 @@
   width: 90vw;
   height: auto;
   padding: 0vw;
-  box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
   margin: 5vw;
   border-radius: 20px;
+  opacity: 0.95;
 }
 
 .aboutmetext {
-  background-color:rgb(35, 35, 35);
+  background-color:rgb(0,0,0, 0.3);
   color: white;
   width: 90vw;
   height: auto;
@@ -142,7 +149,8 @@
   padding: 3vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 5vw;
-  box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
+  backdrop-filter: blur(8px);
   border-radius: 20px;
 }
 
@@ -153,10 +161,12 @@
   box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
   margin: 5vw;
   border-radius: 20px;
+  opacity: 0.95;
 }
 
 .sudokutext{
-  background-color:rgb(35, 35, 35);
+  background-color:rgb(0,0,0,0.3);
+  backdrop-filter: blur(8px);
   color: white;
   width: 90vw;
   height: auto;
@@ -166,7 +176,7 @@
   padding: 3vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 5vw;
-  box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
   border-radius: 20px;
 }
 
@@ -376,7 +386,11 @@
     display: flex;
     flex-direction: row;
     padding: 0;
-    box-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 40px;
+    background-color: rgb(35, 35, 35, 0.3);
+    background-image: url(/img/artwork.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .aboutmetext {
     width: 100%;
@@ -385,7 +399,7 @@
     margin: 3vw;
     padding: 1.7vw;
     margin-left: 0;
-    box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 40px;
     border-radius: 30px;
   }
 
@@ -394,7 +408,7 @@
     height: 40vw;
     padding: 0vw;
     margin: 3vw;
-    box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 40px;
     border-radius: 30px;
   }
 
@@ -407,7 +421,9 @@
     box-sizing: border-box;
     padding-bottom: 1vw;
     padding-top: 0vw;
-    box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 40px;
+    background-image: url(/img/galaxy.jfif);
+    background-size: cover;
   }
 
   .sudokutext {
@@ -417,13 +433,15 @@
     margin: 3vw;
     padding: 1.7vw;
     margin-left: 0;
-    box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 40px;
     border-radius: 30px;
+    background-color: rgb(35, 35, 35, 0.3);
+    backdrop-filter: blur(8px);
   }
 
   .banner2 {
     font-size: 6vw;
-    box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 40px;
   }
   
   .sudokulink {
@@ -441,7 +459,7 @@
     box-sizing: border-box;
     padding-bottom: 3vw;
     padding-top: 3vw;
-    box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 40px;
   }
   
   .contacttext {
@@ -457,7 +475,7 @@
     padding: 1.7vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2.65vw;
-    box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 40px;
     border-radius: 30px;
     text-align: center;
   }
@@ -469,7 +487,6 @@
     backdrop-filter: blur(8px);
     margin-top: 108px;
     box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
-    margin-bottom: 58px;
-    overflow-x: hidden;
+    margin-bottom: 58px;  
   }
 }
