@@ -6,10 +6,12 @@
 }
 
 .header {
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+  box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
   position: fixed;
   width: 100%;
   z-index: 3;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .header ul {
@@ -149,9 +151,11 @@
   padding: 3vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 5vw;
-  box-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-radius: 20px;
+
 }
 
 .img2 {
@@ -165,8 +169,9 @@
 }
 
 .sudokutext{
-  background-color:rgb(0,0,0,0.3);
+  background-color:rgb(0,0,0,0.1);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: white;
   width: 90vw;
   height: auto;
@@ -176,7 +181,7 @@
   padding: 3vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 5vw;
-  box-shadow: rgba(0, 0, 0, 1) 0px 0px 20px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
   border-radius: 20px;
 }
 
@@ -224,6 +229,7 @@
   width: 100%;
   background-color: rgb(0,0,0, 0.1);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   margin-top: 108px;
   box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
   margin-bottom: 58px;
@@ -236,7 +242,10 @@
 .gallery1 {
   height: 90%;
   width: auto;
-  margin: 19px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
   background-image: url(/img/gallery1.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -332,6 +341,7 @@
   }
   .header{
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     background-color: rgba(0, 0, 0, 0.5);
   }
   .header li a {
@@ -437,6 +447,7 @@
     border-radius: 30px;
     background-color: rgb(35, 35, 35, 0.3);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
 
   .banner2 {
@@ -485,6 +496,7 @@
     width: 100%;
     background-color: rgb(0,0,0, 0.1);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     margin-top: 108px;
     box-shadow: rgba(0, 0, 0, 1) 0px 0px 30px;
     margin-bottom: 58px;  
