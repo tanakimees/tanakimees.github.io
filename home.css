@@ -11,10 +11,9 @@
   border-style: inset;
   width: 100%;
   z-index: 1000;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  border-bottom: solid white 2px;
-  border-top: solid white 2px;
+  box-shadow: rgba(255,255,255, 0.6) 0px 0px 10px;
+  border-bottom: white solid 1px;
+  border-top: white solid 1px;
 }
 
 .header ul {
@@ -61,13 +60,12 @@
 .banner {
   width: 100%;
   height: auto;
-  background-color: rgb(0,0,0,0.1);
-  background-image: url(/img/galaxy.jfif);
-  border-bottom: solid 5px white;
-  border-top: solid 5px white;
+  background-color: rgb(0,0,0);
   font-weight: 600;
   text-align: center;
   color: white;
+  border-bottom: white solid 1px;
+  border-top: white solid 1px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 8vw;
   padding-top: 20px;
@@ -77,11 +75,9 @@
 .banner1 {
   width: 100%;
   height: auto;
-  background-color: rgb(0,0,0,1);
-  background-image: url(/img/galaxy.jfif);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: solid white 5px;
+  background-color: rgb(0,0,0);
+  border-bottom: white solid 1px;
+  border-top: white solid 1px;
   border-left: none;
   text-align: center;
   color: white;
@@ -103,13 +99,13 @@
 .banner2 {
   width: 100%;
   height: auto;
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(0,0,0);
   text-align: center;
+  border-bottom: white solid 1px;
+  border-top: white solid 1px;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 8vw;
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -144,14 +140,14 @@
   width: 90vw;
   height: auto;
   padding: 0vw;
-  border: 1px white solid;
   margin: 5vw;
   border-radius: 20px;
-  opacity: 0.95;
+  box-shadow: rgba(255,255,255, 0.6) 0px 0px 10px;
 }
 
 .aboutmetext {
-  background-color:rgb(0,0,0, 0.3);
+  background-color:rgb(0,0,0, 0.7);
+  box-shadow: rgba(255,255,255, 0.6) 0px 0px 10px;
   color: white;
   width: 90vw;
   height: auto;
@@ -161,30 +157,25 @@
   padding: 3vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 5vw;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   border-radius: 20px;
-  border: 1px white solid;
 }
 
 .img2 {
-  border: solid white 1px;
   width: 90vw;
   height: auto;
   padding: 0vw;
   margin: 4.5vw;
   border-radius: 20px;
   opacity: 0.95;
-
+  box-shadow: rgba(255,255,255, 3) 0px 0px 10px;
 }
 
 .sudokutext{
-  background-color:rgb(0,0,0,0.1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background-color:rgb(0,0,0,0.7);
   color: white;
   width: 90vw;
   height: auto;
+  box-shadow: rgba(255,255,255, 0.6) 0px 0px 10px;
   margin: 5vw;
   margin-top: 0;
   box-sizing: border-box;
@@ -192,7 +183,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 5vw;
   border-radius: 20px;
-  border: white solid 1px;
 }
 
 .sudokuheader {
@@ -211,42 +201,40 @@
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-color: rgb(45, 45, 45);
+  background-image: url(/img/blackhole.jpg);
+  background-size: cover;
   box-sizing: border-box;
   padding-bottom: 1vw;
   padding-top: 5vw;
 }
 
 .contacttext {
-  background-color:rgb(35, 35, 35);
+  background-color: rgb(0,0,0, 0.7);
   color: white;
   width: 90vw;
   height: auto;
   margin: 5vw;
   margin-top: 0;
-  border: solid white 1px;
   box-sizing: border-box;
   padding: 3vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 5vw;
   border-radius: 20px;
   text-align: center;
+  box-shadow: rgba(255,255,255, 0.6) 0px 0px 10px;
 }
 
 .gallerylol {
   height: auto;
   width: 100%;
-  background-color: rgb(0,0,0, 0.1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background-color: rgb(0,0,0, 0.5);
   margin-top: 108px;
   margin-bottom: 58px;
   flex-direction: row;
   display: flex;
   overflow-x: scroll;
+  box-shadow: rgba(255,255,255, 0.6) 0px 0px 10px;
   overflow-y: hidden;
-  border-bottom: solid white 1px;
-  border-top: solid white 1px;
 }
 
 .gallery1 {
@@ -256,13 +244,12 @@
   margin-bottom: 2vh;
   margin-left: 1vh;
   margin-right: 1vh;
+  box-shadow: rgba(255,255,255, 0.6) 0px 0px 5px;
   background-image: url(/img/gallery1.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: beige;
-  border: white solid 1px;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 1) 0px 0px 10px;
 }
 
 .header .menu-icon {
@@ -338,7 +325,6 @@
   color: white;
 }
 .header{
-  backdrop-filter: blur(8px);
   background-color: rgba(0, 0, 0, 0.3);
 }
 .header li a {
@@ -350,8 +336,6 @@
     float: left;
   }
   .header{
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
     background-color: rgba(0, 0, 0, 0.5);
     top: 0px;
   }
@@ -385,11 +369,15 @@
   width: 100%;
   height: auto;
   font-size: 6vw;
-  background-color: rgb(35, 35, 35);
+  background-color: rgb(0,0,0);
+  border-bottom: white solid 5px;
+  border-top: white solid 5px;
   }
 
   .banner1 {
     font-size: 6vw;
+    border-bottom: white solid 5px;
+    border-top: white solid 5px;
   }
 
   .img1 {
@@ -432,7 +420,6 @@
     flex-direction: row;
     width: 100%;
     height: auto;
-    background-color: rgb(45, 45, 45);
     box-sizing: border-box;
     padding-bottom: 1vw;
     padding-top: 0vw;
@@ -448,13 +435,12 @@
     padding: 1.7vw;
     margin-left: 0;
     border-radius: 30px;
-    background-color: rgb(35, 35, 35, 0.3);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
   }
 
   .banner2 {
     font-size: 6vw;
+    border-bottom: white solid 5px;
+    border-top: white solid 5px;
   }
   
   .sudokulink {
@@ -468,14 +454,13 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: rgb(45, 45, 45);
     box-sizing: border-box;
     padding-bottom: 3vw;
     padding-top: 3vw;
   }
   
   .contacttext {
-    background-color:rgb(35, 35, 35);
+    background-color:rgb(0,0,0,0.7);
     color: white;
     width: 94%;
     height: auto;
@@ -494,9 +479,7 @@
   .gallerylol {
     height: auto;
     width: 100%;
-    background-color: rgb(0,0,0, 0.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background-color: rgb(0,0,0, 0.7);
     margin-top: 108px;
     margin-bottom: 58px;  
   }
