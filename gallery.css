@@ -18,55 +18,59 @@
     height: 100vh;
     background-image: linear-gradient(to bottom right, blue, purple);
     background-size: cover;
+    flex-direction: column;
 }
 
 .home {
-    border-radius: 30px;
     position: relative;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 100px;
-    top: 78px;
-    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
     height: auto;
+    width: auto;
+    top: 68px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: rgba(0,0,0,0.4);
-    flex-direction: column;
     display: flex;
-    box-sizing: border-box;
+    border-radius: 30px;
+    font-family: 'Bungee', cursive;
+    color: white;
+    font-size: 6vw;
 }
 
-.hello1 {
+.home1 {
+    position: relative;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: auto;
+    border-radius: 30px;
+    width: auto;
+    top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(0,0,0,0.4);
     display: flex;
     font-family: 'Bungee', cursive;
-    margin: 20px;
     color: white;
-    font-size: 10vw;
-    margin-top: -5vw;
-}
-
-.text1 {
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 5vw;
-    margin-top: -9vw;
-    margin-right: 2vw;
-    font-size: 4vw;
+    font-size: 6vw;
 }
 
 .picture1 {
+    box-sizing:border-box;
     display: flex;
-    width: auto;    
+    margin-top: 79px;
+    width:auto;  
     background-color: rgba(0, 0, 0, 0);
-    align-content: center;
-    margin: 20px;
-    height:100%;
-    background-image: url(/pic1.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 30px;
-    opacity: 70%;
+    height:90vw;
+    opacity: 90%;
+    overflow-x: scroll;
+    flex-direction: row;
 }
-  
+
+.sudoku {
+    display: flex;
+}
+
 .header ul {
     margin: 0;
     padding: 0;
@@ -209,21 +213,31 @@
         margin-left: 2vw;
         margin-top: -2.5vw;
         font-size: 5vw;
-    }
-    
-    .text1 {
-        margin-left: 3vw;
-        margin-top: -4.5vw;
-        margin-right: 2vw;
-        font-size: 2.3vw;
+        height: 8vw;
+        margin-bottom: 2vw;
     }
 
     .picture1 {
-        background-image: url(/pic4.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: left center;
-        opacity: 70%;
+        opacity: 90%;
+        margin-top: 103px;
+        max-height: 700px;
+    }
+
+    .home {
+        top: 82px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 3vw;
+    }
+
+    .home1 {
+        top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 3vw;
     }
 }    
   
