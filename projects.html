@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristo Tänak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="icon" href="https://th.bing.com/th/id/R.b7ae0e9f126212ea9616936f1da0ba86?rik=x2dHX%2bB5cxPBjg&riu=http%3a%2f%2fgetdrawings.com%2ffree-icon%2fhemp-icon-59.png&ehk=oQOqtJjrGAjz8qEmQy%2bScYzdDsm1CC7poE43qHG05Wo%3d&risl=&pid=ImgRaw&r=0" type="image/x-icon">
+</head>
+<body>
+
+    <div class="bgimg">
+        <div class="home">
+            <h1 class="sheader">SUDOKU</h1> 
+            <h1 class="stext">Sudoku arendamine oli vägagi raske. Kokku oli projekt 5495 rida koodi.</h1>
+        </div>
+        <div class="home1">
+            <h1 class="cheader">COOKIE CLICKER</h1>
+        </div>
+        <div class="home2">
+            <h1 class="mheader">MUWA</h1>
+        </div>
+    </div>
+
+    <div class="divider">
+
+    </div>
+
+    <div class="bgimg2">
+        <div class="apidoc">
+            <h1>TextMagic API v2</h1>
+            <a class="href1" href="https://www.textmagic.com/sms-gateway-api/">TextMagic'u SMS API</a> on platvorm, mille kaudu on võimalik arendada sõnumsiderakendusi kasutades TextMagic'u infrastruktuuri.
+            Selle kaudu saad saata ja vastu võtta SMS sõnumeid, pärida informatsiooni sissetulevate ja väljaminevate sõnumite kohta, hallata kontakte, valmistada formaate, ajastada sõnumite väljasaatmist ning töödelda suurt hulka sõnumeid.
+            <br> <br>
+            Kaks viisi kuidas kasutada TextMagic API'd: REST API ja Emaili SMS API.<br>
+            Kooditeegid: Node.js, PHP, Java, Python, .NET, Ruby, Delphi, Go, Perl, C++, Shell ja C#. <br> <br>
+            <h2>Kuidas genereerida API identimisteabe</h2> 
+            Sõnumite saatmiseks on sul vaja API võtit. API võtmed to sarnased kasutajaparoolile; erinevus nende kahe vahel on see, et API võti annab ligipääsu vaid API'le: sellega ei saa sisse logida TextMagic'usse. <br>
+            Sinu rakendus saadab sisselogimisteabe iga API taotlusega HTTP päisena: X-TM-Username on sinu TextMagic'u kasutajanimi ning X-TM-Key on sinu API võti. <br> <br>
+            <h2>Kuidas saada kätte meie API võtit</h2>
+            1. Logi sisse TextMagic'usse. <br>
+            2. Mine API seadete lehele. <br>
+            3. Kliki 'Add new API key' nuppu. <br>
+            4. Sisesta oma rakenduse nimi API võtme jaoks. <br>
+            5. Kliki 'Generate new key' nuppu. <br>
+            6. Sinu API võti on olemas. <br> <br>
+            <h2>Kuidas REST API töötab</h2>
+            REST API kasutab HTTP protokolli et saata ja vastu võtta sõnumeid. REST sõnumid on tavaliselt kodeeritud JSON dokumentidena, see on turvalisem kui varaseimad meetodid näiteks XML'il põhinev SOAP protokoll. REST API kasutab samu funktsioone mida brauserid kasutavad: POST, GET, PUT ja DELETE. Need vastavad CRUD funktsioonidele: create, read, update ja delete.
+            <br><br> Näide: <br>
+            GET /api/v2/contacts (Tagastab kõik sinu kontaktid). <br>
+            GET /api/v2/contacts/{id} (Tagastab teatud kontakti). <br>
+            POST /api/v2/contacts (Loob uue kontakti). <br>
+            PUT /api/v2/contacts/{id} (Uuendab olemasolevat kontakti). <br>
+            DELETE /api/v2/contacts{id} (Kustutab olemasoleva kontakti ära). <br> <br>
+            See ongi nii lihtne! Kusjuures, ainult seda ongi vaja et hallata kõike oma kontakte TextMagic'u kasutajas. <br><br>
+            <h2>TextMagic'u Sandbox</h2>
+            Sandbox on tööriist, millega saad testida TextMagic REST API taotlusi ilma ühegi rakenduse alla laadimata või koodi kirjutamiseta.
+            <br> Et taotleda andmeid oma TextMagic kasutaja kaudu, on sul vaja sisestada oma kasutajanimi ja API võti. Sul on võimalus salvestada need oma brauserisse.
+            <br> Et vaadata funktsioonide dokumentatsiooni, mille alla käivad parameetrid, filtrid, formaadid ja tagastuskoodid, pead lihtsalt vajutama selle nimele.
+            <br> Sandboxi kaudu saad testida TextMagic'u REST API'd läbi oma brauseri. Programmeerimisoskusi pole vaja. Et kasutada Sandboxi, lihtsalt vajuta selle käsu peale, mida soovite testida.
+            Sisestage vajalikud parameetrid ja klikkige nupul Try! et esitada taotlust. URL vastab sellele käsule, mida soovite kasutada, näiteks: /api/v2/templates vastab templates käsule. Saate HTTP-vastuse koodi millega koos on JSON response body, mis näitab teile kas taotlus õnnestus voi mitte. HTTP vastuse pealistes leiad lisateavet.
+            <br><br><h2>Sõnumite saatmine</h2>
+            Peamine põhjus TextMagic API kasutamiseks on SMS sõnumite saatmine. <br>
+            Et saata sõnumeid TextMagic API v2'ga, saatke POST taotlus sõnumite URL'ile. <br>
+            Näide: 'POST https://rest.textmagic.com/api/v2/messages'. <br> <br>
+            <h2>Kuidas saata sõnumit vaid ühele kontaktisikule</h2>
+            Kui tahad saata üksikut sõnumit ühele kontaktisikule, pane kirja vaid text ja phones parameetrid. text peab sisaldama seda sõnumit, mida soovid saata ja phones peab sisaldama kontaktisiku telefoninumbrit. Näiteks: Kui tahad saata SMS sõnumit tekstiga 'I love TextMagic' telefoninumbrile +44(0)7860021130, siis kasutage järgnevat käsku:
+            <br><br> POST https://rest.textmagic.com/api/v2/messages <br> <br>
+            Parameetritega: <br>
+            text: Hello <br>
+            phones: 4958888104 <br> <br>
+            Kui saadate sõnumi vähemalt ühele kontaktisikule, siis TextMagic API tagastab sessionId ja messageId. Muide, saad ka vaadata sõnumi teekonda ID'ga. Kuna see ei ole suur sõnumi saadetis ega ka ajakavaga saadetud sõnum, siis bulkId ja scheduleId on null.
+            <br><br><h2>Kuidas saata suurt hulka sõnumeid korraga</h2>
+            On võimalik ka saata suurt hulka sõnumeid korraga erinevatele kontaktidele. Oletame, et teil on list ID'ga 55314, milles asuvad 100 kontakti. Kui tahate neile SMS sõnumi saata, tehke järgnev päring:
+            <br><br> POST https://rest.textmagic.com/api/v2/messages <br>
+            <br> Parameetritega <br>
+            text:       Hello <br>
+            lists:      55314 <br>
+            phones:     44312664788500 <br>
+            contacts:   318348295454 <br> <br>
+            <h2>Kuidas saata üle 1000 sõnumi korraga</h2>
+        </div>
+    </div>
+
+    <header class="header">
+        <a href="/index.html" class="logo">Kristo Tänak</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="index.html">Kodu</a></li>
+          <li><a href="gallery.html">Galerii</a></li>
+          <li><a href="#section3">Projektid</a></li>
+          <li><a href="#section4">Kontakt</a></li>
+        </ul>
+    </header>
+   
+</body>
+</html>
