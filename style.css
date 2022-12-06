@@ -13,12 +13,17 @@ body {
     display: flex;
     width: auto;
     flex-direction: column;
-    height: 200vh;
+    height: auto;
     background: rgb(22,170,126);
     background: linear-gradient(180deg, rgba(22,170,126,1) 0%, rgba(43,217,165,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 .namebox {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  text-decoration: none;
   position: fixed;
     margin-bottom: 0px;
     width: 100%;
@@ -26,6 +31,7 @@ body {
     padding: 20px;
     background-color: white;
     vertical-align: middle;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .name {
@@ -38,17 +44,55 @@ body {
 }
 
 .mainbox {
+  align-self: center;
+  padding: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 20px;
   margin: 50px;
   margin-top: 150px;
   border-radius: 30px;
   width: auto;
-  height: 800px;
+  max-width: 1100px;
+  height: auto;
   background-color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
+
+.imglol {
+  border-radius: 30px;
+  width: 100%;
+  max-height: 500px;
+  object-fit:cover;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.textclass {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4vw;
+  margin-top: 0px;
+  background: -webkit-linear-gradient(rgb(11, 63, 50), rgb(0, 224, 213));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textclass1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2vw;
+}
+
+.line {
+  width: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 20px;
+  background-color: cyan;
+  height: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
 
 
 
@@ -65,7 +109,6 @@ label .menu {
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
-    
   }
   
   label .hamburger {
@@ -75,7 +118,6 @@ label .menu {
     width: 30px;
     height: 2px;
     background: #69D2e7;
-    display: block;
     -webkit-transform-origin: center;
     transform-origin: center;
     -webkit-transition: .5s ease-in-out;
@@ -122,7 +164,6 @@ label .menu {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
-    
   }
   
   label input:checked + .menu + ul { opacity: 1; }
@@ -143,8 +184,13 @@ label .menu {
     margin-bottom: 1em;
     display: block;
     color: rgba(22,170,126,1);
+    position: sticky;
+    position: -webkit-sticky;
     text-decoration: none;
-    
+  }
+
+  .label1 {
+    position: sticky;
   }
   
   h1 {
@@ -176,7 +222,38 @@ label .menu {
       margin-top: 130px;
       border-radius: 20px;
       width: auto;
-      height: 800px;
+      height: auto;
       background-color: white;
+    }
+
+    .newbox {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 20px;
+      margin: 30px;
+      margin-top: 0px;
+      border-radius: 20px;
+      width: auto;
+      height: auto;
+      background-color: white;
+    }
+
+    .imglol {
+      border-radius: 20px;
+    }
+
+    .textclass {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 6vw;
+      margin-top: 10px;
+      background: -webkit-linear-gradient(rgb(11, 63, 50), rgb(0, 224, 213));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .textclass1 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 4vw;
     }
 }
