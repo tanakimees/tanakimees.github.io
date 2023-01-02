@@ -165,29 +165,48 @@ body {
 }
 
 .boxlol {
-    width: 300px;
-    height: 400px;
+    width: 1000px;
+    height: auto;
     background-color: white;
     margin: 20px;
     border-radius: 20px;
     transition: transform .2s;
     display: flex;
     flex-direction: column;
+    text-align: left;
+    text-decoration: none;
+    color: black;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-.boxlol:hover {
-    transform: scale(1.1);
 }
 
 .imglol1 {
     margin: 10px;
-    width: 280px;
-    height: 150px;
+    width: auto;
+    height: 350px;
     object-fit: cover;
     border-radius: 20px;
     transition: transform .2s;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 3px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.imglol2 {
+    margin: 30px;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    transition: transform .2s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 3px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.imglol11 {
+    margin: 10px;
+    width: auto;
+    height: 350px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 3px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .textlol10 {
@@ -195,13 +214,15 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 10px;
-    margin-top: -10px;
+    margin-top: -73px;
+    margin-left: 90px;
     font-size: 40px;
     user-select: none;
 }
 
 .textlol11 {
     margin: 10px;
+    margin-left:90px;
     margin-top: -10px;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -234,7 +255,6 @@ body {
     display: table-cell;
     line-height: 63px;
     user-select: none;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .button101 {
@@ -253,7 +273,6 @@ body {
     display: table-cell;
     line-height: 63px;
     user-select: none;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .button100:hover {
@@ -265,7 +284,6 @@ body {
 }
 
 .icon1 {
-  position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -468,5 +486,18 @@ label .menu {
         width: auto;
         height: auto;
         margin-bottom: 110px;
+    }
+
+    .boxlol {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .imglol1 {
+        width: auto;
+    }
+
+    .imglol2 {
+        margin: 10px;
     }
 }

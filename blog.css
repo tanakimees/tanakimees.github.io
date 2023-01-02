@@ -165,7 +165,7 @@ body {
 }
 
 .boxlol {
-    width: 300px;
+    width: 500px;
     height: 400px;
     background-color: white;
     margin: 20px;
@@ -173,6 +173,10 @@ body {
     transition: transform .2s;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    color: black;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -182,12 +186,12 @@ body {
 
 .imglol1 {
     margin: 10px;
-    width: 280px;
+    width: 480px;
     height: 150px;
     object-fit: cover;
     border-radius: 20px;
     transition: transform .2s;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 3px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .textlol10 {
@@ -234,7 +238,6 @@ body {
     display: table-cell;
     line-height: 63px;
     user-select: none;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .button101 {
@@ -253,7 +256,6 @@ body {
     display: table-cell;
     line-height: 63px;
     user-select: none;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .button100:hover {
@@ -468,5 +470,13 @@ label .menu {
         width: auto;
         height: auto;
         margin-bottom: 110px;
+    }
+
+    .boxlol {
+        max-width: 400px;
+    }
+
+    .imglol1 {
+        max-width: 380px;
     }
 }
