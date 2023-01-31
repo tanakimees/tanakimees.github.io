@@ -487,3 +487,27 @@ label .menu {
         max-width: 380px;
     }
 }
+
+@media (max-width: 600px) {
+  .imgbox {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    margin-top: 17px;
+    right: 180px;
+  }
+  .imgbox1 {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    margin-top: 17px;
+    right: 140px;
+  }
+  .imgbox2 {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    margin-top: 17px;
+    right: 100px;
+  }
+}
