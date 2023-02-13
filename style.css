@@ -82,7 +82,7 @@
 }
 
 .menubutton:hover {
-    transform:scale(1.05);
+    transform:scale(1.03);
 }
 
 .menubutton::after {
@@ -121,7 +121,7 @@
 }
 
 .menubutton1:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .menubutton1::after {
@@ -232,11 +232,16 @@ label .menu {
   
   label a {
     margin-bottom: 1em;
+    font-family: 'Righteous', cursive;
+    border: 1px solid #ff00b3;
+    border-radius: 5px;
+    padding: 10px;
     display: block;
-    color: rgba(22,170,126,1);
+    color: #ff00b3; 
     position: sticky;
     position: -webkit-sticky;
     text-decoration: none;
+    text-align: center;
   }
 
 .section1 {
