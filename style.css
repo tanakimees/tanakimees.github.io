@@ -13,7 +13,7 @@ body {
 .menu {
     height: 40px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
     width: 100vw;
     position: fixed;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .menubutton2 {
-    background: -webkit-linear-gradient(#3f00a5, #ff00b3);
+    background: -webkit-linear-gradient(#4b00c4, #ff00b3);
     display: inline-block;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -86,7 +86,7 @@ body {
 }
 
 .menubutton3 {
-    background: -webkit-linear-gradient(#3f00a5, #ff00b3);
+    background: -webkit-linear-gradient(#4b00c4, #ff00b3);
     display: inline-block;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -113,7 +113,7 @@ body {
 }
 
 .menubutton4 {
-    background: -webkit-linear-gradient(#3f00a5, #ff00b3);
+    background: -webkit-linear-gradient(#4b00c4, #ff00b3);
     display: inline-block;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -170,7 +170,7 @@ body {
 .menub2line {
     width: 195px;
     height: 5px;
-    background: -webkit-linear-gradient(#3f00a5, #ff00b3);
+    background: -webkit-linear-gradient(#4b00c4, #ff00b3);
     border-radius: 5px;
     visibility: hidden;
     opacity: 0;
@@ -180,7 +180,7 @@ body {
 .menub3line {
     width: 105px;
     height: 5px;
-    background: -webkit-linear-gradient(#3f00a5, #ff00b3);
+    background: -webkit-linear-gradient(#4b00c4, #ff00b3);
     border-radius: 5px;
     visibility: hidden;
     opacity: 0;
@@ -190,7 +190,7 @@ body {
 .menub4line {
     width: 183px;
     height: 5px;
-    background: -webkit-linear-gradient(#3f00a5, #ff00b3);
+    background: -webkit-linear-gradient(#4b00c4, #ff00b3);
     border-radius: 5px;
     visibility: hidden;
     opacity: 0;
@@ -215,7 +215,7 @@ label .menu {
     z-index: 101;
     width: 50px;
     height: 40px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0);
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
@@ -261,8 +261,10 @@ label .menu {
   label input { display: none; }
   
   label input:checked + .menu {
-    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5), 0 0 0 100vh rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 0vw rgba(0, 0, 0, 0.5), 0 0 0 1000vh rgba(0, 0, 0, 0.5);
     border-radius: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
   label input:checked + .menu .hamburger {
@@ -320,7 +322,9 @@ label .menu {
 .section1 {
     width: 100vw;
     height: 100vh;
-    background-image: url("resources/images/backgroundimage3.png");
+    background-image: url("resources/images/backgroundimage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -357,6 +361,14 @@ label .menu {
         right: -10px;
         top: 5px;
     }
+
+    label a {
+        transition: .1s ease-in;
+    }
+
+    label a:hover {
+        transform: scale(1.1);
+    }
 }
 
 @media(max-width:600px) {
@@ -376,5 +388,41 @@ label .menu {
     }
     .menub5line {
         width: 212px;
+    }
+
+    label a {
+        transition: .1s ease-in;
+    }
+
+    label a:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media(max-width:300px) {
+    .menu {
+        height: 20px;
+    }
+    .name {
+        margin-top: 2px;
+        font-size: 20px;
+    }
+    .menu label {
+        display: flex;
+    }
+    label .menu {
+        right: -5px;
+        top: -5px;
+    }
+    .menub5line {
+        width: 212px;
+    }
+
+    label a {
+        transition: .1s ease-in;
+    }
+
+    label a:hover {
+        transform: scale(1.1);
     }
 }
