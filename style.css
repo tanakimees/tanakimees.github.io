@@ -229,7 +229,7 @@ label .menu {
     height: 4px;
     z-index: 1000;
     border-radius: 5px;
-    background: #ff00b3;
+    background: #00fff2;
     -webkit-transform-origin: center;
     transform-origin: center;
     -webkit-transition: .5s ease-in-out;
@@ -250,7 +250,7 @@ label .menu {
     display: block;
     width: 100%;
     height: 100%;
-    background: #ff00b3;  
+    background: #00fff2; 
   }
   
   label .hamburger:before { top: -10px; }
@@ -311,6 +311,11 @@ label .menu {
     text-align: center;
   }
 
+  .label1 {
+    color: #00fff2;
+    border: 1px solid #00fff2;;
+  }
+
 .section1 {
     width: 100vw;
     height: 100vh;
@@ -367,5 +372,8 @@ label .menu {
     label .menu {
         right: -15px;
         top: 0px;
+    }
+    .menub5line {
+        width: 212px;
     }
 }
