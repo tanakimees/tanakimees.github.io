@@ -8,21 +8,26 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
-    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .menu {
     height: 40px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.2);
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: calc(100vw - 20px);
     position: fixed;
     z-index: 1000;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
 }
 
 .name {
@@ -222,7 +227,7 @@ label .menu {
     z-index: 101;
     width: 50px;
     height: 35px;
-    background: rgba(0, 0, 0, 0);
+    background:rgba(0, 0, 0, 0);
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
@@ -344,8 +349,8 @@ label .menu {
 
 .picture {
     position: relative;
-    margin-top: 150px;
-    margin-left: 100px;
+    margin-top: 160px;
+    margin-left: 80px;
     width: 35vw;
     height: 35vw;
     outline: 10px solid aqua;
@@ -357,15 +362,15 @@ label .menu {
 .textbox {
     display: flex;
     flex-direction: column;
-    transform: rotate(10deg);
-    margin-top: 300px;
+    margin-top: 200px;
     outline-offset: 10px;
     outline: 10px solid aqua;
-    margin-left: 100px;
+    margin-left: 50px;
     height: min-content;
+    width: auto;
     color: aqua;
     font-size: 1.5vw;
-    width: auto;
+    transform: rotate(10deg);
 }
 
 .headertextbox {
@@ -386,7 +391,7 @@ label .menu {
     position: absolute;
     left: 50%;
     transform: translate(-50%,0%);
-    top: 90%;
+    top: 88%;
     background-color: aqua;
     box-shadow: #ff00b3 0px 5px 40px 10px;
     outline-offset: 10px;
@@ -406,23 +411,6 @@ label .menu {
 
 .scrollbutton1:hover {
     transform: translate(-50%,-20%);
-}
-
-.areaforimage1 {
-    position: absolute;
-    display: flex;
-    width: 50%;
-    background-color: rgba(255, 0, 0, 0.2);
-    height: 100%;
-}
-
-.areafortextbox {
-    position: absolute;
-    display: flex;
-    left: 50%;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(0, 255, 0, 0.2);
 }
 
 
@@ -467,6 +455,108 @@ label .menu {
     label a:hover {
         transform: scale(1.1);
     }
+    .introductionbox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .textbox {
+        transform: rotate(5deg);
+        outline: 5px solid aqua;
+        margin-top: 40px;
+        margin-left: 0px;
+        width: 40vw;
+        font-size: 1.8vw;
+    }
+    .picture {
+        display: flex;
+        position: relative;
+        transform: rotate(5deg);
+        width: 40vw;
+        height: 40vw;
+        outline: 5px solid aqua;
+        margin-top: 105px;
+        margin-left: 0px;
+    }
+    .scrollbutton1 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0%);
+        top: 90%;
+        background-color: aqua;
+        box-shadow: #ff00b3 0px 5px 40px 10px;
+        outline-offset: 10px;
+        outline: 10px solid aqua;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-decoration: none;
+        color: #ff00b3;
+        text-align: center;
+        font-size: 30px;
+        -moz-transition: all .1s ease-in;
+        -o-transition: all .1s ease-in;
+        -webkit-transition: all .1s ease-in;
+        transition: all .1s ease-in;
+    }
+    
+    .scrollbutton1:hover {
+        transform: translate(-50%,-20%);
+    }
+}
+
+@media(max-width:800px) {
+    .introductionbox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .textbox {
+        transform: rotate(5deg);
+        outline: 5px solid aqua;
+        margin-top: 40px;
+        margin-left: 0px;
+        width: 50vw;
+    }
+    .picture {
+        display: flex;
+        position: relative;
+        transform: rotate(5deg);
+        width: 50vw;
+        height: 50vw;
+        outline: 5px solid aqua;
+        margin-top: 105px;
+        margin-left: 0px;
+    }
+    .headertextbox {
+        font-size: 5vw;
+    }
+}
+
+@media(max-width:700px) {
+    .introductionbox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .textbox {
+        transform: rotate(5deg);
+        outline: 5px solid aqua;
+        margin-top: 40px;
+        margin-left: 0px;
+        width: 55vw;
+        font-size: 2.5vw;
+    }
+    .picture {
+        display: flex;
+        position: relative;
+        transform: rotate(5deg);
+        width: 55vw;
+        height: 55vw;
+        outline: 5px solid aqua;
+        margin-top: 105px;
+        margin-left: 0px;
+    }
+    .headertextbox {
+        font-size: 5vw;
+    }
 }
 
 @media(max-width:600px) {
@@ -495,6 +585,59 @@ label .menu {
     label a:hover {
         transform: scale(1.1);
     }
+    .introductionbox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .textbox {
+        transform: rotate(5deg);
+        outline: 5px solid aqua;
+        margin-top: 40px;
+        margin-left: 0px;
+        width: 70vw;
+        font-size: 2.5vw;
+    }
+    .picture {
+        display: flex;
+        position: relative;
+        transform: rotate(5deg);
+        width: 70vw;
+        height: 70vw;
+        outline: 5px solid aqua;
+        margin-top: 105px;
+        margin-left: 0px;
+    }
+    .headertextbox {
+        font-size: 5vw;
+    }
+}
+
+@media(max-width:500px) {
+    .introductionbox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .textbox {
+        transform: rotate(5deg);
+        outline: 5px solid aqua;
+        margin-top: 40px;
+        margin-left: 0px;
+        width: 80vw;
+        font-size: 3vw;
+    }
+    .picture {
+        display: flex;
+        position: relative;
+        transform: rotate(5deg);
+        width: 80vw;
+        height: 80vw;
+        outline: 5px solid aqua;
+        margin-top: 105px;
+        margin-left: 0px;
+    }
+    .headertextbox {
+        font-size: 5vw;
+    }
 }
 
 @media(max-width:300px) {
@@ -522,5 +665,30 @@ label .menu {
 
     label a:hover {
         transform: scale(1.1);
+    }
+    .introductionbox {
+        flex-direction: column;
+        align-items: center;
+    }
+    .textbox {
+        transform: rotate(0deg);
+        outline: 3px solid aqua;
+        margin-top: 40px;
+        margin-left: 0px;
+        width: 80vw;
+        font-size: 5vw;
+    }
+    .picture {
+        display: flex;
+        position: relative;
+        transform: rotate(0deg);
+        width: 80vw;
+        height: 80vw;
+        outline: 3px solid aqua;
+        margin-top: 105px;
+        margin-left: 0px;
+    }
+    .headertextbox {
+        font-size: 10   vw;
     }
 }
