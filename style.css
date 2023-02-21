@@ -6,6 +6,10 @@
     user-select: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -14,9 +18,11 @@ body {
     height: 40px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.2);
-    width: 100vw;
+    width: 100%;
     position: fixed;
     z-index: 1000;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .name {
@@ -332,18 +338,91 @@ label .menu {
 .introductionbox {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
 }
 
 .picture {
     position: relative;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 100px;
-    width: 30vw;
-    height: 30vw;
+    width: 35vw;
+    height: 35vw;
     outline: 10px solid aqua;
     outline-offset: 10px;
     transform: rotate(-10deg);
     box-shadow: #ff00b3 0px 30px 150px 0px;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    transform: rotate(10deg);
+    margin-top: 300px;
+    outline-offset: 10px;
+    outline: 10px solid aqua;
+    margin-left: 100px;
+    height: min-content;
+    color: aqua;
+    font-size: 1.5vw;
+    width: auto;
+}
+
+.headertextbox {
+    font-size: 3vw;
+    background: -webkit-linear-gradient(#ff00b3, aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skillsbox {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.scrollbutton1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    top: 90%;
+    background-color: aqua;
+    box-shadow: #ff00b3 0px 5px 40px 10px;
+    outline-offset: 10px;
+    outline: 10px solid aqua;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    color: #ff00b3;
+    text-align: center;
+    font-size: 40px;
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+}
+
+.scrollbutton1:hover {
+    transform: translate(-50%,-20%);
+}
+
+.areaforimage1 {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    background-color: rgba(255, 0, 0, 0.2);
+    height: 100%;
+}
+
+.areafortextbox {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 255, 0, 0.2);
 }
 
 
