@@ -349,28 +349,30 @@ label .menu {
 
 .picture {
     position: relative;
-    margin-top: 160px;
-    margin-left: 80px;
-    width: 35vw;
-    height: 35vw;
+    margin-top: 110px;
+    margin-left: 50px;
+    width: 40vw;
+    height: 40vw;
+    transform: rotate(3deg);
     outline: 10px solid aqua;
     outline-offset: 10px;
-    transform: rotate(-10deg);
     box-shadow: #ff00b3 0px 30px 150px 0px;
 }
 
 .textbox {
     display: flex;
+    position: relative;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 120px;
     outline-offset: 10px;
+    transform: rotate(-3deg);
     outline: 10px solid aqua;
-    margin-left: 50px;
+    margin-left: 70px;
     height: min-content;
-    width: auto;
+    width: 100%;
+    margin-right: 30px;
     color: aqua;
     font-size: 1.5vw;
-    transform: rotate(10deg);
 }
 
 .headertextbox {
@@ -391,7 +393,8 @@ label .menu {
     position: absolute;
     left: 50%;
     transform: translate(-50%,0%);
-    top: 88%;
+    top: calc(100% - 100px);
+    margin-bottom: 50px;
     background-color: aqua;
     box-shadow: #ff00b3 0px 5px 40px 10px;
     outline-offset: 10px;
@@ -416,6 +419,9 @@ label .menu {
 
 
 @media(max-width:1000px) {
+    .scrollbutton1 {
+        display: none;
+    }
     .menubutton1 {
         display: none;
     }
@@ -456,43 +462,71 @@ label .menu {
         transform: scale(1.1);
     }
     .introductionbox {
-        flex-direction: column;
-        align-items: center;
-    }
-    .textbox {
-        transform: rotate(5deg);
-        outline: 5px solid aqua;
-        margin-top: 40px;
-        margin-left: 0px;
-        width: 40vw;
-        font-size: 1.8vw;
-    }
-    .picture {
+        width: 100vw;
+        height: 100vh;
         display: flex;
+        flex-direction: row;
+    }
+    
+    .picture {
         position: relative;
-        transform: rotate(5deg);
+        margin-top: 110px;
+        margin-left: 50px;
         width: 40vw;
         height: 40vw;
+        transform: rotate(3deg);
         outline: 5px solid aqua;
-        margin-top: 105px;
-        margin-left: 0px;
+        outline-offset: 10px;
+        box-shadow: #ff00b3 0px 30px 150px 0px;
     }
+    
+    .textbox {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-top: 120px;
+        outline-offset: 10px;
+        transform: rotate(-3deg);
+        outline: 5px solid aqua;
+        margin-left: 70px;
+        height: min-content;
+        width: 100%;
+        margin-right: 30px;
+        color: aqua;
+        font-size: 1.5vw;
+    }
+    
+    .headertextbox {
+        font-size: 3vw;
+        background: -webkit-linear-gradient(#ff00b3, aqua);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .skillsbox {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    
     .scrollbutton1 {
         position: absolute;
         left: 50%;
         transform: translate(-50%,0%);
-        top: 90%;
+        top: calc(100% - 100px);
+        margin-bottom: 50px;
         background-color: aqua;
         box-shadow: #ff00b3 0px 5px 40px 10px;
         outline-offset: 10px;
         outline: 10px solid aqua;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         text-decoration: none;
         color: #ff00b3;
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
         -moz-transition: all .1s ease-in;
         -o-transition: all .1s ease-in;
         -webkit-transition: all .1s ease-in;
@@ -506,28 +540,79 @@ label .menu {
 
 @media(max-width:800px) {
     .introductionbox {
-        flex-direction: column;
-        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
     }
-    .textbox {
-        transform: rotate(5deg);
-        outline: 5px solid aqua;
-        margin-top: 40px;
-        margin-left: 0px;
-        width: 50vw;
-    }
+    
     .picture {
+        position: relative;
+        margin-top: 110px;
+        margin-left: 50px;
+        width: 40vw;
+        height: 40vw;
+        transform: rotate(3deg);
+        outline: 5px solid aqua;
+        outline-offset: 10px;
+        box-shadow: #ff00b3 0px 30px 150px 0px;
+    }
+    
+    .textbox {
         display: flex;
         position: relative;
-        transform: rotate(5deg);
-        width: 50vw;
-        height: 50vw;
+        flex-direction: column;
+        margin-top: 120px;
+        outline-offset: 10px;
+        transform: rotate(-3deg);
         outline: 5px solid aqua;
-        margin-top: 105px;
-        margin-left: 0px;
+        margin-left: 70px;
+        height: min-content;
+        width: 100%;
+        margin-right: 30px;
+        color: aqua;
+        font-size: 1.5vw;
     }
+    
     .headertextbox {
-        font-size: 5vw;
+        font-size: 3vw;
+        background: -webkit-linear-gradient(#ff00b3, aqua);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .skillsbox {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    
+    .scrollbutton1 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0%);
+        top: calc(100% - 100px);
+        margin-bottom: 50px;
+        background-color: aqua;
+        box-shadow: #ff00b3 0px 5px 40px 10px;
+        outline-offset: 10px;
+        outline: 10px solid aqua;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+        color: #ff00b3;
+        text-align: center;
+        font-size: 40px;
+        -moz-transition: all .1s ease-in;
+        -o-transition: all .1s ease-in;
+        -webkit-transition: all .1s ease-in;
+        transition: all .1s ease-in;
+    }
+    
+    .scrollbutton1:hover {
+        transform: translate(-50%,-20%);
     }
 }
 
@@ -618,7 +703,7 @@ label .menu {
         align-items: center;
     }
     .textbox {
-        transform: rotate(5deg);
+        transform: rotate(3deg);
         outline: 5px solid aqua;
         margin-top: 40px;
         margin-left: 0px;
@@ -628,11 +713,11 @@ label .menu {
     .picture {
         display: flex;
         position: relative;
-        transform: rotate(5deg);
+        transform: rotate(3deg);
         width: 80vw;
         height: 80vw;
         outline: 5px solid aqua;
-        margin-top: 105px;
+        margin-top: 85px;
         margin-left: 0px;
     }
     .headertextbox {
