@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
 }
 
 .name {
-    background: -webkit-linear-gradient(#00755c, #00fff2);
+    background: -webkit-linear-gradient(#ff00b3, aqua);
     display: inline-block;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -272,11 +272,11 @@ label .menu {
   
   label input { display: none; }
   
-  label input:checked + .menu {
-    box-shadow: 0 0 0 0vw rgba(0, 0, 0, 0.5), 0 0 0 1000vh rgba(0, 0, 0, 0.5);
+  label input:checked + .menu{
+    box-shadow: 0 0 0 0vw rgba(0, 0, 0, 0.8), 0 0 0 1000vh rgba(0, 0, 0, 0.8);
     border-radius: 0;
     z-index: 100;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
   }
   
   label input:checked + .menu .hamburger {
@@ -297,7 +297,7 @@ label .menu {
     transform: rotate(90deg);
     top: 0;
   }
-  
+
   label input:checked + .menu + ul { opacity: 1; }
   
   label ul {
@@ -323,6 +323,7 @@ label .menu {
     position: sticky;
     position: -webkit-sticky;
     text-decoration: none;
+    display: none;
     text-align: center;
   }
 
@@ -333,7 +334,8 @@ label .menu {
 
 .section1 {
     width: 100vw;
-    height: 200vh;
+    height: auto;
+    min-width: 200vh;
     background-image: url("resources/images/backgroundimage.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -377,16 +379,19 @@ label .menu {
 
 .headertextbox {
     font-size: 3vw;
-    background: -webkit-linear-gradient(#ff00b3, aqua);
+    background: -webkit-linear-gradient(#00755c, #00fff2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .skillsbox {
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.2);
+    padding-bottom: 50px;
 }
 
 .scrollbutton1 {
@@ -416,11 +421,60 @@ label .menu {
     transform: translate(-50%,-20%);
 }
 
+.textbox1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 95px;
+    outline-offset: 10px;
+    outline: 10px solid aqua;
+    margin-left: 40px;
+    height: min-content;
+    width: auto;
+    margin-right: 40px;
+    color: aqua;
+    font-size: 1.5vw;
+    text-align: center;
+}
 
+.images1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: 20px;
+    height: auto;
+    width: auto;
+    margin-right: 20px;
+    color: aqua;
+    font-size: 1.5vw;
+    text-align: center;
+    flex-wrap: wrap;
+}
+  
+.image1 {
+    width: 150px;
+    height: 200px;
+    padding: 30px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.image2 {
+    width: 100px;
+    height: 100px;
+}
 
 @media(max-width:1000px) {
-    .scrollbutton1 {
-        display: none;
+    label a {
+        display: block;
     }
     .menubutton1 {
         display: none;
@@ -495,17 +549,23 @@ label .menu {
         color: aqua;
         font-size: 1.5vw;
     }
+
+    .textbox1 {
+        outline: 5px solid aqua;
+    }
     
     .headertextbox {
         font-size: 3vw;
-        background: -webkit-linear-gradient(#ff00b3, aqua);
+        background: -webkit-linear-gradient(#00755c, #00fff2);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     
     .skillsbox {
         width: 100vw;
-        height: 100vh;
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 50px;
         display: flex;
         background-color: rgba(0, 0, 0, 0.2);
     }
@@ -535,6 +595,30 @@ label .menu {
     
     .scrollbutton1:hover {
         transform: translate(-50%,-20%);
+    }
+    .images1 {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 40px;
+        margin-left: 20px;
+        height: auto;
+        width: auto;
+        margin-right: 20px;
+        color: aqua;
+        font-size: 1.5vw;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+      
+    .image1 {
+        width: 200px;
+        height: 200px;
+        padding: 30px;
+        margin: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
     }
 }
 
@@ -576,14 +660,15 @@ label .menu {
     
     .headertextbox {
         font-size: 3vw;
-        background: -webkit-linear-gradient(#ff00b3, aqua);
+        background: -webkit-linear-gradient(#00755c, #00fff2);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     
     .skillsbox {
         width: 100vw;
-        height: 100vh;
+        height: auto;
+        min-height: 100vh;
         display: flex;
         background-color: rgba(0, 0, 0, 0.2);
     }
@@ -641,6 +726,9 @@ label .menu {
     }
     .headertextbox {
         font-size: 5vw;
+    }
+    .scrollbutton1 {
+        display: none;
     }
 }
 
@@ -759,7 +847,15 @@ label .menu {
         transform: rotate(0deg);
         outline: 3px solid aqua;
         margin-top: 40px;
-        margin-left: 0px;
+        margin-left:10vw;
+        width: 80vw;
+        font-size: 5vw;
+    }
+     .textbox1 {
+        transform: rotate(0deg);
+        outline: 3px solid aqua;
+        margin-top: 70px;
+        margin-left:10vw;
         width: 80vw;
         font-size: 5vw;
     }
@@ -774,6 +870,20 @@ label .menu {
         margin-left: 0px;
     }
     .headertextbox {
-        font-size: 10   vw;
+        font-size: 10vw;
     }
+    .images1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-left: 13px;
+    height: 200px;
+    width: auto;
+    margin-right: 13px;
+    color: aqua;
+    font-size: 1.5vw;
+    text-align: center;
+}
 }
