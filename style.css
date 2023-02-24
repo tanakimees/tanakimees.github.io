@@ -323,7 +323,6 @@ label .menu {
     position: sticky;
     position: -webkit-sticky;
     text-decoration: none;
-    display: none;
     text-align: center;
   }
 
@@ -476,6 +475,9 @@ label .menu {
     label a {
         display: block;
     }
+    .name {
+        font-size: 30px;
+    }
     .menubutton1 {
         display: none;
     }
@@ -504,12 +506,17 @@ label .menu {
         display: flex;
     }
     label .menu {
-        right: -10px;
-        top: 5px;
+        right: -21px;
+        top: -1px;
+        display: block;
     }
-
+    .menu {
+        height: 27px;
+        display: block;
+    }
     label a {
         transition: .1s ease-in;
+        display: block;
     }
 
     label a:hover {
@@ -519,18 +526,20 @@ label .menu {
         width: 100vw;
         height: 100vh;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     
     .picture {
         position: relative;
-        margin-top: 110px;
-        margin-left: 50px;
-        width: 40vw;
-        height: 40vw;
-        transform: rotate(3deg);
+        margin-top:87px;
+        margin-left: 40px;
+        width: auto;
+        margin-right: 40px;
+        height: auto;
+        border-radius: 0px;
+        transform: rotate(0deg);
         outline: 5px solid aqua;
-        outline-offset: 10px;
+        outline-offset: 5px;
         box-shadow: #ff00b3 0px 30px 150px 0px;
     }
     
@@ -538,16 +547,18 @@ label .menu {
         display: flex;
         position: relative;
         flex-direction: column;
-        margin-top: 120px;
-        outline-offset: 10px;
-        transform: rotate(-3deg);
+        margin-top: 30px;
+        outline-offset: 5px;
+        border-radius: 0px;
+        transform: rotate(0deg);
         outline: 5px solid aqua;
-        margin-left: 70px;
-        height: min-content;
-        width: 100%;
-        margin-right: 30px;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        margin-right: 40px;
+        height: 100%;
+        width:auto;
         color: aqua;
-        font-size: 1.5vw;
+        font-size: 15px;
     }
 
     .textbox1 {
@@ -555,7 +566,7 @@ label .menu {
     }
     
     .headertextbox {
-        font-size: 3vw;
+        font-size: 5vh;
         background: -webkit-linear-gradient(#00755c, #00fff2);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -571,26 +582,7 @@ label .menu {
     }
     
     .scrollbutton1 {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,0%);
-        top: calc(100% - 100px);
-        margin-bottom: 50px;
-        background-color: aqua;
-        box-shadow: #ff00b3 0px 5px 40px 10px;
-        outline-offset: 10px;
-        outline: 10px solid aqua;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        text-decoration: none;
-        color: #ff00b3;
-        text-align: center;
-        font-size: 40px;
-        -moz-transition: all .1s ease-in;
-        -o-transition: all .1s ease-in;
-        -webkit-transition: all .1s ease-in;
-        transition: all .1s ease-in;
+       display: none;
     }
     
     .scrollbutton1:hover {
@@ -620,270 +612,8 @@ label .menu {
         background-color: rgba(0, 0, 0, 0.2);
         border-radius: 20px;
     }
-}
 
-@media(max-width:800px) {
-    .introductionbox {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
+    .hamburger {
+        display: block;
     }
-    
-    .picture {
-        position: relative;
-        margin-top: 110px;
-        margin-left: 50px;
-        width: 40vw;
-        height: 40vw;
-        transform: rotate(3deg);
-        outline: 5px solid aqua;
-        outline-offset: 10px;
-        box-shadow: #ff00b3 0px 30px 150px 0px;
-    }
-    
-    .textbox {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        margin-top: 120px;
-        outline-offset: 10px;
-        transform: rotate(-3deg);
-        outline: 5px solid aqua;
-        margin-left: 70px;
-        height: min-content;
-        width: 100%;
-        margin-right: 30px;
-        color: aqua;
-        font-size: 1.5vw;
-    }
-    
-    .headertextbox {
-        font-size: 3vw;
-        background: -webkit-linear-gradient(#00755c, #00fff2);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    
-    .skillsbox {
-        width: 100vw;
-        height: auto;
-        min-height: 100vh;
-        display: flex;
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-    
-    .scrollbutton1 {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,0%);
-        top: calc(100% - 100px);
-        margin-bottom: 50px;
-        background-color: aqua;
-        box-shadow: #ff00b3 0px 5px 40px 10px;
-        outline-offset: 10px;
-        outline: 10px solid aqua;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        text-decoration: none;
-        color: #ff00b3;
-        text-align: center;
-        font-size: 40px;
-        -moz-transition: all .1s ease-in;
-        -o-transition: all .1s ease-in;
-        -webkit-transition: all .1s ease-in;
-        transition: all .1s ease-in;
-    }
-    
-    .scrollbutton1:hover {
-        transform: translate(-50%,-20%);
-    }
-}
-
-@media(max-width:700px) {
-    .introductionbox {
-        flex-direction: column;
-        align-items: center;
-    }
-    .textbox {
-        transform: rotate(5deg);
-        outline: 5px solid aqua;
-        margin-top: 40px;
-        margin-left: 0px;
-        width: 55vw;
-        font-size: 2.5vw;
-    }
-    .picture {
-        display: flex;
-        position: relative;
-        transform: rotate(5deg);
-        width: 55vw;
-        height: 55vw;
-        outline: 5px solid aqua;
-        margin-top: 105px;
-        margin-left: 0px;
-    }
-    .headertextbox {
-        font-size: 5vw;
-    }
-    .scrollbutton1 {
-        display: none;
-    }
-}
-
-@media(max-width:600px) {
-    .menu {
-        height: 30px;
-    }
-    .name {
-        margin-top: 2px;
-        font-size: 30px;
-    }
-    .menu label {
-        display: flex;
-    }
-    label .menu {
-        right: -15px;
-        top: 0px;
-    }
-    .menub5line {
-        width: 212px;
-    }
-
-    label a {
-        transition: .1s ease-in;
-    }
-
-    label a:hover {
-        transform: scale(1.1);
-    }
-    .introductionbox {
-        flex-direction: column;
-        align-items: center;
-    }
-    .textbox {
-        transform: rotate(5deg);
-        outline: 5px solid aqua;
-        margin-top: 40px;
-        margin-left: 0px;
-        width: 70vw;
-        font-size: 2.5vw;
-    }
-    .picture {
-        display: flex;
-        position: relative;
-        transform: rotate(5deg);
-        width: 70vw;
-        height: 70vw;
-        outline: 5px solid aqua;
-        margin-top: 105px;
-        margin-left: 0px;
-    }
-    .headertextbox {
-        font-size: 5vw;
-    }
-}
-
-@media(max-width:500px) {
-    .introductionbox {
-        flex-direction: column;
-        align-items: center;
-    }
-    .textbox {
-        transform: rotate(3deg);
-        outline: 5px solid aqua;
-        margin-top: 40px;
-        margin-left: 0px;
-        width: 80vw;
-        font-size: 3vw;
-    }
-    .picture {
-        display: flex;
-        position: relative;
-        transform: rotate(3deg);
-        width: 80vw;
-        height: 80vw;
-        outline: 5px solid aqua;
-        margin-top: 85px;
-        margin-left: 0px;
-    }
-    .headertextbox {
-        font-size: 5vw;
-    }
-}
-
-@media(max-width:300px) {
-    .menu {
-        height: 20px;
-    }
-    .name {
-        margin-top: 2px;
-        font-size: 20px;
-    }
-    .menu label {
-        display: flex;
-    }
-    label .menu {
-        right: -5px;
-        top: -5px;
-    }
-    .menub5line {
-        width: 212px;
-    }
-
-    label a {
-        transition: .1s ease-in;
-    }
-
-    label a:hover {
-        transform: scale(1.1);
-    }
-    .introductionbox {
-        flex-direction: column;
-        align-items: center;
-    }
-    .textbox {
-        transform: rotate(0deg);
-        outline: 3px solid aqua;
-        margin-top: 40px;
-        margin-left:10vw;
-        width: 80vw;
-        font-size: 5vw;
-    }
-     .textbox1 {
-        transform: rotate(0deg);
-        outline: 3px solid aqua;
-        margin-top: 70px;
-        margin-left:10vw;
-        width: 80vw;
-        font-size: 5vw;
-    }
-    .picture {
-        display: flex;
-        position: relative;
-        transform: rotate(0deg);
-        width: 80vw;
-        height: 80vw;
-        outline: 3px solid aqua;
-        margin-top: 105px;
-        margin-left: 0px;
-    }
-    .headertextbox {
-        font-size: 10vw;
-    }
-    .images1 {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    margin-top: 30px;
-    background-color: rgba(0, 0, 0, 0.2);
-    margin-left: 13px;
-    height: 200px;
-    width: auto;
-    margin-right: 13px;
-    color: aqua;
-    font-size: 1.5vw;
-    text-align: center;
-}
 }
