@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 .menu {
     height: 40px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     width: calc(100vw - 20px);
     position: fixed;
     z-index: 1000;
@@ -218,6 +218,10 @@ body::-webkit-scrollbar {
     transition: opacity 0.3s, visibility 0.3s;
 }
 
+.menu label ul {
+    display: none;
+}
+
 label .menu {
     position: fixed;
     right: 0px;
@@ -268,7 +272,9 @@ label .menu {
   
   label .hamburger:after { bottom: -10px; }
   
-  label input { display: none; }
+  label input {
+    display: none;
+  }
   
   label input:checked + .menu{
     box-shadow: 0 0 0 0vw rgba(0, 0, 0, 0.8), 0 0 0 1000vh rgba(0, 0, 0, 0.8);
@@ -296,8 +302,17 @@ label .menu {
     top: 0;
   }
 
-  label input:checked + .menu + ul { opacity: 1; }
+  label input:checked + .menu + ul {
+    animation: fadeIn 0.5s;
+    opacity: 1;
+    display: block;
+  }
   
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
   label ul {
     z-index: 200;
     position: fixed;
@@ -306,10 +321,18 @@ label .menu {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 0;
-    -webkit-transition: .25s 0s ease-in-out;
-    transition: .25s 0s ease-in-out;
+  }
+
+  .menu label ul {
+    animation: fadeOut 0.5s;
+    opacity: 0;
   }
   
+  @keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+
   label a {
     margin-bottom: 1em;
     font-family: 'Righteous', cursive;
@@ -632,7 +655,7 @@ label .menu {
         border-radius: 20px;
         width:70vw;
         color: aqua;
-        font-size: 15px;
+        font-size: 2vh;
         padding-bottom: 30px;
     }
 
@@ -700,3 +723,22 @@ label .menu {
         font-size: 5vw;
     }
 }
+
+@media(max-height: 580px) and (orientation: landscape) {
+    .picture {
+        margin-top: 20px;
+        width: 60vh;
+        height: 60vh;
+    }
+
+    .introductionbox {
+        flex-direction: row;
+    }
+
+    .textbox {
+        margin-top: 70px;
+        max-height: 60vh;
+        font-size: 2vw;
+    }
+}
+
