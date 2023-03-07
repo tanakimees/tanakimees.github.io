@@ -211,7 +211,7 @@ body::-webkit-scrollbar {
     width: 281px;
     height: 5px;
     border-radius: 5px;
-    background: -webkit-linear-gradient(#00755c, #00fff2);
+    background: -webkit-linear-gradient(#c90a8f, rgb(8, 201, 201));
     border-radius: 5px;
     visibility: hidden;
     opacity: 0;
@@ -368,27 +368,37 @@ label .menu {
     margin-top: 120px;
     outline-offset: 10px;
     margin-left: 70px;
-    padding: 20px;
     border-radius: 20px;
     height: min-content;
     width: 100%;
     margin-right: 30px;
+    padding: 20px;
     color: aqua;
     font-size: 1.5vw;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .headertextbox {
     font-size: 3vw;
     background: -webkit-linear-gradient(#ff00b3, aqua);
+    text-align: center;
+    width: auto;
+    padding: 10px;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 20px;
+    margin-bottom: 15px;    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .headertextbox4 {
     font-size: 3vw;
-    background: -webkit-linear-gradient(#00755c, #00fff2);
+    background: -webkit-linear-gradient(#ff00b3, aqua);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -446,6 +456,7 @@ label .menu {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .images1 {
@@ -465,8 +476,8 @@ label .menu {
 }
   
 .image1 {
-    width: 150px;
-    height: 200px;
+    width: 180px;
+    height: 250px;
     padding: 30px;
     margin: 20px;
     display: flex;
@@ -476,6 +487,7 @@ label .menu {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .image2 {
@@ -484,14 +496,22 @@ label .menu {
 }
 
 .image3 {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     margin-top: 10px;
     -moz-transition: all .1s ease-in;
     -o-transition: all .1s ease-in;
     -webkit-transition: all .1s ease-in;
     transition: all .1s ease-in;
     cursor: pointer;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.socialbuttons a {
+    width: 60px;
+    height: 60px;
+    color: rgba(0, 0, 0, 0);
 }
 
 .image3:hover {
@@ -505,6 +525,7 @@ label .menu {
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 5px;
+    padding-bottom: 3px;
 }
 
 @media(max-width:1000px) {
@@ -527,6 +548,9 @@ label .menu {
         display: none;
     }
     .menub4line {
+        display: none;
+    }
+    .menub5line {
         display: none;
     }
     .menubutton2 {
@@ -604,7 +628,7 @@ label .menu {
         margin-left: 40px;
         margin-bottom: 40px;
         margin-right: 40px;
-        height: auto;
+        height: 100%;
         border-radius: 20px;
         width:70vw;
         color: aqua;
@@ -621,7 +645,7 @@ label .menu {
     .headertextbox {
         font-size: 4vh;
         margin-bottom: 10px;
-        background: -webkit-linear-gradient(#00755c, #00fff2);
+        background: -webkit-linear-gradient(#ff00b3, aqua);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
